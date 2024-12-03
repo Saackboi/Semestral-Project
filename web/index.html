@@ -8,6 +8,8 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Div para la imagen de fondo -->
+    <div class="background"></div>
 
     <!-- Barra de Menú Responsive -->
     <nav class="navbar">
@@ -35,13 +37,16 @@
     </header>
     <blockquote>
         <main>
-                <section class="descripcion">
-                    <h2>Descripción General</h2>
+            <section class="descripcion">
+                <h2>Descripción General</h2>
+                <div class="highlight">
                     <p>Coclé es una de las provincias más destacadas de Panamá por su riqueza natural, histórica y cultural. Desde sus impresionantes playas hasta sus montañas llenas de encanto, Coclé ofrece una experiencia única para todo tipo de viajeros. En esta página encontrarás información sobre los destinos turísticos más emblemáticos de la región, incluyendo sitios históricos, playas paradisíacas, y maravillas naturales que no puedes dejar de visitar.</p>
-                </section>
+                </div>
+            </section>
 
-                <section class="Objetivo">
-                    <h2>Objetivo de la Página Web</h2>
+            <section class="Objetivo">
+                <h2>Objetivo de la Página Web</h2>
+                <div class="highlight">
                     <p>El objetivo principal de esta página web es promover el turismo en la provincia de Coclé, facilitando información relevante y atractiva para turistas locales e internacionales. Además, busca:</p>
                     <ul>
                         <li>Destacar los principales sitios turísticos de Coclé.</li>
@@ -49,23 +54,36 @@
                         <li>Fomentar el interés en la rica herencia cultural y natural de Coclé.</li>
                         <li>Servir como guía práctica para planificar visitas a los distintos destinos.</li>
                     </ul>
-                </section>
-        
-                <section class="destacadas">
-                    <h2>Secciones</h2>
+                </div>
+            </section>
+
+            <section class="destacadas">
+                <h2>Secciones</h2>
+                <div class="highlight">
                     <ul>
                         <li>Galería Visual: Explora imágenes cautivadoras de los principales destinos turísticos.</li>
                         <li>Sitios Turísticos: Descubre detalles sobre los cinco lugares más populares en Coclé.</li>
                         <li>Juego Interactivo: Demuestra tus capacidades en nuestro juego de click.</li>
                         <li>Formulario de Contacto: Comunícate con nosotros para obtener más información o compartir tus experiencias.</li>
                     </ul>
-                </section>
-            
+                </div>
+            </section>
+
         </main>
 
         <footer>
             <p>© 2024 Turismo en Coclé. Todos los derechos reservados.</p>
         </footer>
     </blockquote>
+
+        <!-- Ventana Modal de Bienvenida -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="cerrar" id="cerrarModal">&times;</span>
+        <h2>Encantados de verte</h2>
+        <p>Explora los maravillosos destinos turísticos de Coclé.</p>
+        <button id="aceptarModal">Aceptar</button>
+    </div>
+</div>
 </body>
 </html>

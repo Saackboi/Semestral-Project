@@ -1,0 +1,131 @@
+
+/* juego.css */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.game-area {
+    position: relative;
+    margin: 20px auto;
+    width: 400px;
+    height: 400px;
+    background: #8bc34a;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#target {
+    width: 40px;
+    height: 40px;
+    background: #ff5722;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#target:hover {
+    transform: scale(1.2);
+}
+
+.stats {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #4caf50;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: #8bc34a;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 100%;
+    left: 0; /* Alinea el submenú con el elemento principal */
+    min-width: 150px; /* Ancho mínimo para el submenú */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+    border: 1px solid #4caf50; /* Opcional, para mayor claridad */
+}
+
+/* Mostrar el submenú al pasar el cursor */
+.navbar ul li:hover .submenu {
+    display: block;
+}
+
+nav.navbar ul li .submenu {
+    display: none;
+}
+
+/* Estilo de los elementos del submenú */
+.submenu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.submenu li a:hover {
+    background: #7cb342;
+}

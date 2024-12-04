@@ -165,3 +165,67 @@ nav.navbar ul li .submenu {
 .submenu li a:hover {
     background: #7cb342;
 }
+/* Media Queries para hacer el diseño responsive */
+
+/* Pantallas pequeñas (como móviles) */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Coloca los elementos en columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .navbar ul li {
+        margin: 10px 0; /* Aumentamos el margen entre los elementos */
+    }
+
+    section img {
+        max-width: 80%; /* Las imágenes ocupan más espacio */
+    }
+
+    .slider-container {
+        width: 100%; /* La galería ocupa todo el ancho */
+    }
+
+    .modal-content {
+        width: 90%; /* El modal ocupa un 90% del ancho */
+    }
+
+    .controls button {
+        font-size: 18px; /* Ajustamos el tamaño de los controles */
+        padding: 8px;
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    .navbar ul {
+        justify-content: space-between; /* Barra de navegación alineada a los extremos */
+    }
+
+    section img {
+        max-width: 70%; /* Las imágenes ocupan un poco más de espacio */
+    }
+
+    .slider-container {
+        width: 90%; /* Galería más grande */
+    }
+
+    .modal-content {
+        width: 80%; /* Modal más pequeño */
+    }
+}
+
+/* Pantallas grandes (escritorios grandes) */
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 3rem; /* Aumentamos el tamaño del título en pantallas grandes */
+    }
+
+    section img {
+        max-width: 50%; /* Las imágenes ocupan la mitad del ancho */
+    }
+
+    .slider-container {
+        width: 80%; /* Galería más grande */
+    }
+}
